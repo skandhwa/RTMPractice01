@@ -1,0 +1,29 @@
+Project Notes 
+
+
+We are working on a Application which is Anthem , it is a healthcare application where I am a part of Customer module
+We are following agile methodology where we are working in Sprints that goes for 2 weeks ,
+We are first performing manual testing for the test cases which is being created by the team .
+
+We do the automation of test scripts in n+1 sprint , 
+We are following a BDD cucumber framework in which we have used page object model . 
+
+As a part of Customer Module , we have to write scripts related to customer management like 
+customer creation , editing the details, policy allocation to customer , scheme allocation 
+
+In Our Automation framework the folder structure is basically as below , 
+
+
+We have feature files where we write all the scenarios in gherkin syntaxes
+Corresponding to FF we have step definition where we are implementing the cucumber shells 
+Since we are following POM , for every page we have a page class where we put all locators and methods related to the page 
+
+We have a utilities package where we have implemented all the reusable functionalities like fetching data from excel, property file
+We have also used a property file where we put details in form of key value pair like browser name , environment where we want to execute 
+We also have a excel sheet from where we are fetching details of test data 
+
+All the hardcoded paths are being placed in Constant class where the paths are added in form of static final strings 
+
+For reporting we have used extent report and also we have an option of taking screenshot for all the cases 
+
+
